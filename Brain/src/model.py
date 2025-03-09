@@ -50,7 +50,7 @@ class DecoderBlock(nn.Module):
         return x
 
 class MobileNetUNet(nn.Module):
-    def __init__(self, img_ch=1, seg_ch=3, num_classes=3):
+    def __init__(self, img_ch=1, seg_ch=4, num_classes=3):
         super().__init__()
         
         # Load pretrained MobileNetV2

@@ -12,7 +12,7 @@ class SegmentationClassificationDataset(Dataset):
         self.split = split
         self.transform = transform
         self.img_size = img_size if isinstance(img_size, tuple) else (img_size, img_size)
-        self.num_classes = 4
+        self.num_classes = 3
         
         # Get paths
         self.images_dir = os.path.join(root_dir, split, 'image')
